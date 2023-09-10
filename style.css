@@ -64,3 +64,7 @@ body {
     background-color: #d8a7a7;
     color: black;
 }
+
+#scores {
+    font-size: 1.5rem;
+}
