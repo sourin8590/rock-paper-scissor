@@ -4,6 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto+Serif:ital,opsz,wght@0,8..144,400;1,8..144,400;1,8..144,500&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Rock Paper Scissors</title>
 </head>
@@ -13,17 +18,49 @@
         <h1>Rock Paper Scissors game</h1>
         <h3>Play and enjoy rock paper scissor with computer</h3>
     </section>
-    <section id="main">
-        <div id="play-zone">
-            <button id="rock">&#x1F44A;</button>
-            <button id="paper">&#x1f590;</button>
-            <button id="scissors">&#x270c;</button>
-        </div>
-        <p id="winner"></p>
-        <p id="scores">Your score: <span id="user-scr">0</span> Computer score: <span id="cmps-score">0</span></p>
-        <button id="reset">Reset</button>
-    </section>
+    <section id="main1">
+        <section id="blank"></section>
+        <section id="main">
+            <div id="play-zone">
+                <button id="rock">&#x1F44A;</button>
+                <button id="paper">&#x1f590;</button>
+                <button id="scissors">&#x270c;</button>
+            </div>
+            <p id="winner"></p>
+            <p id="scores">Your score: <span id="user-scr">0</span> Computer score: <span id="cmps-score">0</span></p>
+            <button id="reset">Reset</button>
+        </section>
+        <section id="scoreBoard">
+            <div style="background-color: rgb(197, 169, 150);
+                margin-right:35px;
+                padding:10px;
+                border-radius: 10px;
+                box-shadow: 1px 1px 1px 2px black">
 
+                <h1 style=" height:35px;
+                    display:flex;
+                    align-items:center;
+                    font-size:2rem;
+                    color: #723737">Leaderboard</h1>
+                <div id="LeaderBoard">
+                    <div id="list">
+                    </div>
+                </div>
+            </div>
+            <div id="winner_card">
+                <h2 style="font-size: 1.5rem;
+                    color:white;">Game stat</h2>
+                <div class="scr">
+                    <p>👨 User (Score : 0)</p>
+                    <p></p>
+                </div>
+                <div class="scr">
+                    <p>💻 Computer (Score : 0)</p>
+                    <p></p>
+                </div>
+            </div>
+        </section>
+    </section>
     <script src="index.js"></script>
 </body>
 
