@@ -187,7 +187,7 @@ rst.addEventListener("click", function () {
     plr_scr[0].children[1].innerHTML = "";
     plr_scr[1].children[1].innerHTML = "";
     plr_scr[0].children[0].innerHTML = "👨 User (Score :  "+youScr + ")";
-    plr_scr[1].children[0].innerHTML = "💻 Computer Score : "+cmpScr + ")";
+    plr_scr[1].children[0].innerHTML = "💻 Computer (Score : "+cmpScr + ")";
     lst = document.getElementById("list");
     for (var i = 0; i <= cnt; i++) {
         const element = document.querySelector(".score");
@@ -201,7 +201,7 @@ function change_scr() {
     // console.log(plr_scr[0].children[1]);
     plr_scr = document.querySelectorAll(".scr")
     plr_scr[0].children[0].innerHTML = "👨 User (Score :  "+youScr + ")";
-    plr_scr[1].children[0].innerHTML = "💻 Computer Score : "+cmpScr + ")";
+    plr_scr[1].children[0].innerHTML = "💻 Computer (Score : "+cmpScr + ")";
     // console.log(youScr + " " + cmpScr);
     if (youScr > cmpScr) {
         plr_scr[0].children[1].innerHTML = "🏆";
